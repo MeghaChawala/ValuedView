@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Transactions | ValuedView</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script src="js/modernizr.custom.js"></script>
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/checkLogin.js"></script>
+	<script src="js/getUserId.js"></script>
+	<script src="js/getUserTransactions.js"></script>
+	<script>checkLogin();</script>
+	<script>getUserTransactions();</script>
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><i class="fas fa-user-plus">Login</i></li>
+								<li><i class="fas fa-sign-in-alt">Sign Up</i></li>
+								<li><i class="fas fa-shopping-cart">My Orders</i></li>
+								<li><i class="fas fa-comment">My Reviews</i></li>
+								<li><i class="fab fa-google-wallet">My Wallet</i></li>
+								<li><i class="fas fa-info-circle">About Us</i></li>
+								<li><i class="fas fa-phone">Contact</i></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<img src="logo.png"  padding-top="10px" class="logo" style="margin-top: -5px"/>
+				</ul>
+				<div class="limiter">
+					<div class="container-table100">
+						<div class="wrap-table100">
+							<div class="table100 ver1 m-b-110">
+								<div class="table100-head">
+									<table >
+										<thead>
+											<tr class="row100 head">
+												<th class="cell100 column1">Product name</th>
+												<th class="cell100 column2">Date and Time</th>
+												<th class="cell100 column3">Store</th>
+												<!-- <th class="cell100 column4">Price</th> -->
+												<th class="cell100 column5">Review</th>
+											</tr>
+											
+								
+										</thead>
+									</table>
+								</div>
+			
+								<div class="table100-body js-pscroll">
+									<table>
+										<tbody id="transaction">
+										
+										</tbody>
+									</table>
+								</div>
+							</div>
+								
+								
+						</div>
+					</div>
+				</div>
+		</div><!-- /container -->
+
+		
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+		
+		<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="vendor/bootstrap/js/popper.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+		<script>
+			$('.js-pscroll').each(function(){
+				var ps = new PerfectScrollbar(this);
+	
+				$(window).on('resize', function(){
+					ps.update();
+				})
+			});
+				
+			
+		</script>
+	<!--===============================================================================================-->
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>

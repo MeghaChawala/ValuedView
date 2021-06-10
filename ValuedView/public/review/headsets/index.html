@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Headphones</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/component.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script src="../../js/modernizr.custom.js"></script>
+		<link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css">  
+		<script src="https://demos.jquerymobile.com/1.4.2/js/jquery.js"></script>
+		<script src="https://demos.jquerymobile.com/1.4.2/js/jquery.mobile-1.4.2.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><i class="fas fa-user-plus">Login</i></li>
+								<li><i class="fas fa-sign-in-alt">Sign Up</i></li>
+								<li><i class="fas fa-shopping-cart">My Orders</i></li>
+								<li><i class="fas fa-comment">My Reviews</i></li>
+								<li><i class="fab fa-google-wallet">My Wallet</i></li>
+								<li><i class="fas fa-info-circle">About Us</i></li>
+								<li><i class="fas fa-phone">Contact</i></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<img src="../../logo.png"  padding-top="10px" class="logo"/>
+			</ul>
+			
+			<h1 style="margin-top: 78px;text-align: center;">Product Review</h1>
+			<form>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Sound <br>amplification</h3>
+					<input type="range" name="range-1a" id="range-1a" min="0" max="0" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1b" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Voice assistants</h3>
+					<input type="range" name="range-1a" id="range-1c" min="0" max="0" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1d" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Water-resistant</h3>
+					<input type="range" name="range-1a" id="range-1e" min="0" max="0" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1f" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Microphones <br>and controls</h3>
+					<input type="range" name="range-1a" id="range-1g" min="0" max="100" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1h" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Speaker</h3>
+					<input type="range" name="range-1a" id="range-1i" min="0" max="0" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1j" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Value for money</h3>
+					<input type="range" name="range-1a" id="range-1k" min="0" max="0" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1l" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Volume limiting</h3>
+					<input type="range" name="range-1a" id="range-1k" min="0" max="0" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1l" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Batteries</h3>
+					<input type="range" name="range-1a" id="range-1k" min="0" max="0" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1l" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+				<div data-role="rangeslider">
+						<h3 style="margin-left: -95px;margin-bottom: -22px;">Headphones <br>Dimensions</h3>
+					<input type="range" name="range-1a" id="range-1k" min="0" max="0" value="0" data-popup-enabled="true" data-show-value="true">
+				   
+					<input type="range" name="range-1b" id="range-1l" min="0" max="100"  data-popup-enabled="true" data-show-value="false">
+				</div><br>
+			<br>
+			<div>
+					<h3 style="margin-left: 22px;margin-bottom: 5px;">Comments</h3>
+					<textarea rows="35" cols="6" style="margin-top: -40px;margin-left: 177px;height: 52px;    width: -webkit-fill-available;" <input type="text" name="usrname" required></textarea>
+					
+			</div>
+			<br>
+			<div>
+				<h3 style="margin-left: 22px;margin-bottom: 5px;">Purchased From</h3>
+				
+				<select >
+					<option value="amazon" selected>Amazon</option>
+					<option value="flipkart">Flipkart</option>
+					<option value="snapdeal">Snapdeal</option>
+					<option value="eBay">eBay</option>
+					<option value="paytm">Paytm</option>
+					<option value="cromā">Cromā</option>
+					<option value="yebhi">Yebhi</option>
+					<option value="indiatimes">Indiatimes</option>
+					<option value="homeShop18">Home Shop 18</option>
+					<option value="naaptol">Naaptol</option>
+					<option value="infibeam">Infibeam</option>
+					<option value="tataCLiQ">Tata CLiQ</option>
+					<option value="shopClues">ShopClues</option>
+					<option value="paytmmall">Paytm Mall</option>
+					<option value="gadgets360">Gadgets 360</option>
+					<option value="mi">Xiaomi</option>
+					<option value="2gud">2gud</option>
+				</select></div></div>
+				
+			</div>
+			<br>
+
+						<h2 style="margin-left: 205px;margin-top: 25px;">Upload Product Images</h2>
+						<div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset" style="width: 400px;margin-left: 150px;">
+							<input type="file" name="img" multiple="" >
+						</div>
+						<h2 style="margin-top: -113px;text-align: right; margin-right: 175px">Upload Bill Images</h2>
+						<div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset" style=" width: 400px;margin-left: 795px;">
+							<input type="file" name="img" multiple="" style="margin-left: 0px;">
+						</div>
+						<br>
+						<button class="button button4">Submit</button>
+	 
+		</form>
+
+		</div><!-- /container -->
+		
+		<script src="../../js/classie.js"></script>
+		<script src="../../js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	</body>
+</html>

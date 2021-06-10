@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Google Nexus Website Menu</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		 <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+		<script src="js/modernizr.custom.js"></script>
+		
+	</head>
+	<body>
+	<div class="main">
+		<section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Create account</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="name" id="name" placeholder="Your Name" onfocus="placeholder=''" onblur="placeholder='Your Name'" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Your Email" onfocus="placeholder=''" onblur="placeholder='Your Email'"required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="password" id="password" placeholder="Password" onfocus="placeholder=''" onblur="placeholder='Your Name'"required/>
+                            <span toggle="#password"  class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repeat your password" onfocus="placeholder=''" onblur="placeholder='Repeat your password'"required/>
+							 <span id='message'></span>
+						</div>
+						<div class="form-group">
+                            <input type="tel" class="form-input" name="Mobile_no" pattern="^\d{10}$" id="Mobile_no" placeholder="Your Mobile_no" onfocus="placeholder=''" onblur="placeholder='Your Mobile_no'"required/>
+                        </div>
+                       
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Have already an account ? <a href="#" class="loginhere-link">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+		</div>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><i class="fas fa-user-plus">Login</i></li>
+								<li><i class="fas fa-sign-in-alt">Sign Up</i></li>
+								<li><i class="fas fa-shopping-cart">My Orders</i></li>
+								<li><i class="fas fa-comment">My Reviews</i></li>
+								<li><i class="fab fa-google-wallet">My Wallet</i></li>
+								<li><i class="fas fa-info-circle">About Us</i></li>
+								<li><i class="fas fa-phone">Contact</i></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<img src="logo.png"  padding-top="10px" class="logo"/>
+			</ul>
+			
+		</div><!-- /container -->
+		
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Login | ValuedView</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
+
+
+
+</style>
+<script src="js/getLoginStatus.js"></script>
+<script src="js/userLogin.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	</head>
+	<body onload="getLoginStatus();" style="overflow-y: hidden;padding: 0px;">
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><i class="fas fa-home">Home</i></li>
+								<li><i class="fas fa-sign-in-alt">Sign Up</i></li>
+								<!-- <li><i class="fas fa-shopping-cart">My Orders</i></li>
+								<li><i class="fas fa-comment">My Reviews</i></li>
+								<li><i class="fab fa-google-wallet">My Wallet</i></li> -->
+								<li><i class="fas fa-info-circle">About Us</i></li>
+								<li><i class="fas fa-phone">Contact</i></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<img src="logo.png"  padding-top="10px" class="logo" style="margin-top:0px;width: 72px !important;	margin-left: 10px !important;"/>
+			
+		</div><!-- /container -->
+		
+		<div class="container" style="margin-left: 160px;">
+	    
+			<div class="col-sm-8 col-sm-offset-2 main">
+			<div class="col-sm-6 left-side">
+			<!-- <h1>Hello<br>World.</h1> -->
+			<h2 class="heading--primary" style="margin-top: 300px; margin-left:120px;color: white"><b>Welcome to VV</b></h2>
+        <h3 class="heading--secondary" style="margin-left:150px;color: white"><b>Ready for CashBack</b></h3>
+			<!-- <p>Login with social media</p>
+			<a class="fb" href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank">Login With Facebook</a>
+			<a class="tw" href="https://ccp.cloudaccess.net/aff.php?aff=5188" target="_blank">Login With Twitter</a>
+	 -->
+			</div><!--col-sm-6-->
+			
+			<div class="col-sm-6 right-side">
+			<!-- <h1>Login</h1>
+			<p>Don't have an account? Create your account, it takes less than a minute</p> -->
+			
+	<!--Form with header-->
+	<div class="form">
+	<form id="login-form" name="login-form" method="POST" onsubmit="event.preventDefault(); userLogin();">	
+			<div class="form-group">
+				<label for="form2">Mobile no.</label>
+				<input pattern="^\d{10}$" type="text" name="mobile_no" id="username" class="form-control" required/>
+				
+				
+			</div>
+	
+			<div class="form-group">
+				<label for="form4">Password</label>
+				<input type="password" class="form-control" name="password" id="password"  required="">
+				<span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+			</div>
+				
+			</div>
+			<div class="form-group">
+					<input type="submit" name="submit" id="submit" class="btn btn-deep-purple" value="Login"/><br>
+				<br>	<p id="login-msg"  style="font-size: 22px;text-align: center"></p>
+			</div>
+
+			
+	</form>
+	
+	</div>
+	<!--/Form with header-->
+	
+			</div><!--col-sm-6-->
+			
+			
+			</div><!--col-sm-8-->
+			
+			</div><!--container-->
+			<script src="form1.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+			<script type="text/javascript">
+
+			</script>
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Mobile Review | ValuedView</title>
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/component.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script src="../../js/modernizr.custom.js"></script>
+		<script src="../../vendor/jquery/jquery.min.js"></script>
+		<script src="../js/checkLogin.js"></script>
+		<script src="../js/getProductName.js"></script>
+		<script src="../js/getProductCategory.js"></script>
+		<script src="../js/getUserId.js"></script>
+		<script>checkLogin();</script>
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><i class="fas fa-user-plus">Login</i></li>
+								<li><i class="fas fa-sign-in-alt">Sign Up</i></li>
+								<li><i class="fas fa-shopping-cart">My Orders</i></li>
+								<li><i class="fas fa-comment">My Reviews</i></li>
+								<li><i class="fab fa-google-wallet">My Wallet</i></li>
+								<li><i class="fas fa-info-circle">About Us</i></li>
+								<li><i class="fas fa-phone">Contact</i></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<img src="../../logo.png"  padding-top="10px" class="logo" style="margin-top:0px;width: 72px !important;	margin-left: 10px !important;"/>
+			</ul>
+			<h1 style="margin-top: 78px;text-align: center;" id="pro-name"></h1>
+			
+		<!-- /container -->
+		<!-- <div class="slidecontainer" style="margin-top: 200px;"> -->
+				<form action="/api/reviews" enctype="multipart/form-data" method="POST">
+					<input type="hidden" name="product_name" id="product_name">
+					<input type="hidden" name="transaction_id" id="transaction_id">
+					<input type="hidden" name="user_id" id="user_id">
+					<input type="hidden" name="product_id" id="product_id">
+					<input type="hidden" name="product_category" id="product_category">
+					<table cellpadding="10" style="width:100%">
+					<tr style="height:100%">
+					<td><h2 style="text-align:center;vertical-align: bottom" >Front Camera</h2></td>
+					<td width=100% colspan="2"><div class="slidecontainer">
+					<label for="myRange1"></label>
+					<input type="range"  min="1" max="10" name="Front_Camera" value="5" class="slider camera1 "  id="myRange1" oninput="outputUpdate1(value)" >
+					<td><output for="myRange1" id="volume1">5</output></td></div>
+					</div>
+					</td>
+					<script>
+						function outputUpdate1(vol) {
+						document.querySelector('#volume1').value = vol;
+						}
+					</script>
+					</tr>
+					<tr>
+					<td><h2 style="text-align:center;vertical-align: bottom">Back Camera</h2></td>
+					<td width=100% colspan="2"><div class="slidecontainer">
+					<div><label for="myRange6"></label>
+					<input type="range"  min="1" max="10" name="Back_Camera" value="5" class="slider camera2 "  id="myRange6" oninput="outputUpdate6(value)" >
+					<td><output for="myRange6" id="volume6">5</output></td></div>
+					</div>
+					</td>
+					<script>
+						function outputUpdate6(vol) {
+						document.querySelector('#volume6').value = vol;
+						}
+					</script>
+					</tr>
+					<tr>
+					<td><h2 style="text-align:center">Battery</h2></td>
+					<td width=100% colspan="2"><div class="slidecontainer">
+					<div><label for="myRange2"></label>
+					  <input type="range" min="1" max="10"  name="Battery" value="5" class="slider battery" id="myRange2" oninput="outputUpdate2(value)" >
+					<td><output for="myRange2" id="volume2">5</output></td></div>
+					</div>
+					</td>
+					<script>
+						function outputUpdate2(vol) {
+						document.querySelector('#volume2').value = vol;
+						}
+					</script>
+					</tr>
+					<tr>
+							<td><h2 style="text-align:center">Display</h2></td>
+							<td width=100% colspan="2"><div class="slidecontainer">
+							<div><label for="myRange3"></label>
+								<input type="range" min="1" max="10"  name="Display" value="5" class="slider battery" id="myRange3" oninput="outputUpdate3(value)" >
+							<td><output for="myRange3" id="volume3">5</output></td></div>
+							</div>
+							</td>
+							<script>
+								function outputUpdate3(vol) {
+								document.querySelector('#volume3').value = vol;
+								}	
+							</script>
+							</tr>
+							<tr>
+									<td><h2 style="text-align:center">Speaker</h2></td>
+									<td width=100% colspan="2"><div class="slidecontainer">
+									<div><label for="myRange4"></label>
+										<input type="range" min="1" max="10"  name="Speaker" value="5" class="slider battery" id="myRange4" oninput="outputUpdate4(value)" >
+									<td><output for="myRange4" id="volume4">5</output></td></div>
+									</div>
+									</td>
+									<script>
+										function outputUpdate4(vol) {
+										document.querySelector('#volume4').value = vol;
+										}
+									</script>
+									</tr>
+					<tr>
+					<td><h2 style="text-align:center"> Value for money</h2></td>
+					<td width=100% colspan="2"><div class="slidecontainer">
+					<div><label for="myRange5"></label>
+					  <input type="range" min="1" max="10" name="Value_for_Money" value="5" class="slider value" id="myRange5" oninput="outputUpdate5(value)" name="vfm">
+					<td><output for="myRange5" id="volume5">5</output></td></div>
+					</div>
+					</td>
+					<script>
+						function outputUpdate5(vol) {
+						document.querySelector('#volume5').value = vol;
+						}
+					</script>
+					</tr>
+					<tr>
+					<td> <h2 style="text-align:center">Comments</h2></td>
+					<td><textarea rows="3" cols="40" name="review" style="resize:both !important;  margin-left:12px;    max-width: 1050px;;" required></textarea></textarea></td>
+					</tr>
+					<tr>
+						<td><h2 style="text-align:center; margin-left:10px">Purchased From</h2></td>
+						<td width=100% colspan="2">
+								<select name="store_name" required>
+										<option value="amazon" selected>Amazon</option>
+										<option value="flipkart">Flipkart</option>
+										<option value="snapdeal">Snapdeal</option>
+										<option value="eBay">eBay</option>
+										<option value="paytm">Paytm</option>
+										<option value="cromā">Cromā</option>
+										<option value="yebhi">Yebhi</option>
+										<option value="indiatimes">Indiatimes</option>
+										<option value="homeShop18">Home Shop 18</option>
+										<option value="naaptol">Naaptol</option>
+										<option value="infibeam">Infibeam</option>
+										<option value="tataCLiQ">Tata CLiQ</option>
+										<option value="shopClues">ShopClues</option>
+										<option value="paytmmall">Paytm Mall</option>
+										<option value="gadgets360">Gadgets 360</option>
+										<option value="mi">Xiaomi</option>
+										<option value="2gud">2gud</option>
+									</select>
+						</td>
+					</tr>
+					<tr>
+				
+					<td><h2 style="margin-top: 25px"> Upload Product images</h2></td>
+					<td colspan="2"><input type="file" name="product-images" multiple accept="image/*" style="margin-top:25px" required></td>
+					</tr>
+					<tr>
+				
+							<td><h2 style="margin-top: 25px"> Upload Bill images</h2></td>
+							<td colspan="2"><input type="file" name="bill-image" accept="image/*" style="margin-top:25px" required></td>
+							</tr>
+							</table>	
+				
+					<div class="buttonHolder">
+					<button style="margin-top: 40px;height: 36px;width: 230px;	font-size: 30px; " class="submitbutton">Submit</button></div>
+				</form>
+	</div>
+
+	<script src="../../js/classie.js"></script>
+	<script src="../../js/gnmenu.js"></script>
+	<script>
+		new gnMenu( document.getElementById( 'gn-menu' ) );
+	</script>
+	</body>
+</html>

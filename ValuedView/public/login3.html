@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Valued-View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/getLoginStatus.js"></script>
+  <script src="js/userLogin.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+</head>
+
+<body onload="getLoginStatus();" style="background: url(./images/back.jpg);  background-repeat: no-repeat; background-position: top center;  background-size: cover; ">
+  <br><br><br>
+  <noscript><h1>You need to enable JavaScript to open this website.</h1>
+    <style>
+      .container{display:none;}
+    </style>
+  </noscript>
+  <div class="container">
+<h1 style="color: black;"><b><center>Login Form</center></b></h1>
+  <div class="signup__container">
+
+  <div class="container__child signup__thumbnail">
+    <div class="thumbnail__logo">
+      
+      <h1 class="logo__text">ValuedView</h1>
+    </div>
+    <div class="thumbnail__content text-center"><br><br><br><br><br><br>
+      <h1 class="heading--primary">Welcome to VV</h1>
+      <h2 class="heading--secondary">Ready for CashBack</h2>
+    </div>
+    <div class="thumbnail__links">
+      <ul class="list-inline m-b-0 text-center">
+        <li><a href="#" target="_blank"><i class="fa fa-globe"></i></a></li>
+        <li><a href="#" target="_blank"><fa class="fa fa-behance"></fa></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+    <div class="signup__overlay"></div>
+  </div>
+  <div class="container__child signup__form">
+    <form id="login-form" name="login-form" method="POST" onsubmit="event.preventDefault(); userLogin();">
+
+      <div class="form-group">
+        <label for="username">Mobile no.</label>
+        <input class="form-control" pattern="^\d{10}$" type="text" name="mobile_no" id="username" placeholder="8460878920" required />
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
+      </div>
+      <input class="btn btn--form" type="submit" value="Login" />
+
+      <br><br>
+      <p id="login-msg"  style="font-size: 22px;text-align: center"></p>
+      <br><br><a class="signup__link" href="#">Forgot Password?</a>
+
+      <div class="m-t-lg">
+        <ul class="list-inline">
+          
+          <li>
+            <a class="signup__link" href="#">Do not have an account</a>
+          </li>
+        </ul>
+      </div>
+    </form>  
+  </div>
+</div>
+</div>
+  
+
+</body>
+
+</html>
